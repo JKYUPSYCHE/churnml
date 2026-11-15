@@ -1,0 +1,22 @@
+name: churnml
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # Keep the Python minor version stable while allowing patch updates.
+  - python=3.12
+
+  # Data preparation and exploration
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - matplotlib=3.9.2
+  - seaborn=0.13.2
+
+  # Baseline models
+  - scikit-learn=1.5.2
+
+  # Notebook kernel and dataset validation
+  - ipykernel=6.29.5
+  - pytest=8.3.3
